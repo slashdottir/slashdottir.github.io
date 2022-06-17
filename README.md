@@ -1,2 +1,4 @@
 # slashdottir.github.io
-stuff
+
+![](https://komarev.com/ghpvc/?username=slashdottir)
+
