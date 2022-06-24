@@ -1,0 +1,59 @@
+<html>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<script>
+// Check if a new cache is available on page load.
+window.addEventListener('load', function(e) {
+
+  window.applicationCache.addEventListener('updateready', function(e) {
+    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+      // Browser downloaded a new app cache.
+      // Swap it in and reload the page to get the new hotness.
+      window.applicationCache.swapCache();
+      if (confirm('A new version of this site is available. Load it?')) {
+        window.location.reload();
+      }
+    } else {
+      // Manifest didn't changed. Nothing new to server.
+    }
+  }, false);
+
+}, false);
+</script>
+
+<h4>
+<a href="index.html">home</a>
+</h4>
+<p>
+<h3>2</h3>
+Mr. Elias sat in his favorite chair by the fireplace in the library.
+ surrounded by an enormous wall of books.<p>
+
+"Are you enjoying your day sir?" I inquired in my customary manner.<p>
+
+"Agreeable enough, thank you Thomas."
+he replied, adjusting the blanket on his lap.<p>
+
+Asking him is a formality only, as I already knew the answer.
+By the turn of his hips in the chair, I could perceive his lower back
+was the primary source of his discomfort.  And by the tone of his voice
+on the balcony earlier, I knew he was feeling generally disagreeable.
+<p>
+And so, in readiness, I pre-loaded the interpersonal therapeutics and
+chiropractic knowledge modules into my secondary access caches.
+<p>
+"Is there something more I can do to assist you sir?" I asked him respectfully.
+<p>
+
+"Sit and chat with me, Thomas," he gestured to the opposite chair.
+<p>
+"Tell me what a robot thinks about."
+<p>
+
+
+<a href="/stories/Thomas3.html">3</a>
+<script>
+document.getElementsByTagName("h1")[0].style.fontSize = "48";
+var title = document.getElementsByTagName("h1")[0];
+</script>
