@@ -1,0 +1,57 @@
+<html>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<script>
+// Check if a new cache is available on page load.
+window.addEventListener('load', function(e) {
+
+  window.applicationCache.addEventListener('updateready', function(e) {
+    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+      // Browser downloaded a new app cache.
+      // Swap it in and reload the page to get the new hotness.
+      window.applicationCache.swapCache();
+      if (confirm('A new version of this site is available. Load it?')) {
+        window.location.reload();
+      }
+    } else {
+      // Manifest didn't changed. Nothing new to server.
+    }
+  }, false);
+
+}, false);
+</script>
+
+<h4>
+<a href="index.html">home</a>
+</h4>
+<p>
+<h3>6</h3>
+<p>
+  Uncle Dan is an amiable,
+  cantankerous old gentleman who is just as likely as any,
+    if no moreso,
+    inclined to bend your ear with tales
+    of great astrophysicial implication
+     and expound upon the metallurigical
+     manifestations of entropy in the windings of a pocket watch.
+<p>
+  As such he is often tired,
+  having exhausted himself earlier from all his endeavors
+  to elicitate excitement from any and all
+  willing to have their ears bent.
+  <p>
+So it is best, for the sake of efficiency, to visit the shoppe
+  in the later afternoon as I am doing here today.
+<p>  I spied upon the sidewalk a city clock
+  burnished soft green upon a pedestal which indicated the time was 4:20 exactly.
+
+
+
+<p>
+
+<a href="/stories/thomas/Thomas7.html">7</a>
+<script>
+document.getElementsByTagName("h1")[0].style.fontSize = "48";
+var title = document.getElementsByTagName("h1")[0];
+</script>
