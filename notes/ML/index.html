@@ -1,0 +1,37 @@
+<html>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<script>
+// Check if a new cache is available on page load.
+window.addEventListener('load', function(e) {
+
+  window.applicationCache.addEventListener('updateready', function(e) {
+    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+      // Browser downloaded a new app cache.
+      // Swap it in and reload the page to get the new hotness.
+      window.applicationCache.swapCache();
+      if (confirm('A new version of this site is available. Load it?')) {
+        window.location.reload();
+      }
+    } else {
+      // Manifest didn't changed. Nothing new to server.
+    }
+  }, false);
+
+}, false);
+</script>
+
+<a href="/index.html">Home↩</a>
+<p>
+<h4>ML Notes
+</h4>
+<p>
+  <a href="/notes/ML/index.html">ML</a>
+
+
+
+<script>
+document.getElementsByTagName("h1")[0].style.fontSize = "48";
+var title = document.getElementsByTagName("h1")[0];
+</script>
